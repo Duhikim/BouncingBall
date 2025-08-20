@@ -10,8 +10,8 @@ public class MyPanel extends JPanel implements ActionListener {
     Image ball;
     Image backgroundImage;
     Timer timer;
-    final double gravity = 0.1;
-    double xVelocity = 5;
+    final double gravity = 0.3;
+    double xVelocity = 3;
     double yVelocity = 0;
     double x = 0;
     double y = 20;
@@ -77,10 +77,10 @@ public class MyPanel extends JPanel implements ActionListener {
                 rectH -= dY;
             }
         }
-        rectX -=0.2;
-        rectY -=0.4;
-        rectW +=0.4;
-        rectH +=0.8;
+        rectX -=0.1;
+        rectY -=0.2;
+        rectW +=0.2;
+        rectH +=0.4;
 
         yVelocity += gravity;
         repaint();
